@@ -7,5 +7,9 @@ namespace Products.Domain
         protected DataContext() : base("DefaultConnection")
         {
         }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Product> Products { get; set; }
     }
 }
